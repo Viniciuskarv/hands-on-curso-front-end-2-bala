@@ -27,15 +27,168 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!-- header -->
     <header class="container-fluid">
+        <!-- container -->
         <section class="container">
+            <!-- row -->
             <article class="row">
-                <a href="/">
-                    <img src="./assets/images/logo.svg" alt="Logo da empresa">
+                <!-- logo -->
+                <a href="/" class="col-md-2">
+                    <img src="./assets/images/logo.svg" alt="Logo da empresa - Moda da Mulher">
                 </a>
+                <!-- end logo -->
+                <!-- buscador  -->
+                <form action="#" class="col-md-7">
+                    <input type="text" name="name" placeholder="Procurar Roupas aqui">
+
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                </form>
+                <!-- end buscador  -->
+                <!-- administrativo do cliente -->
+                <ul class="col-md-3 nav">
+                    <li class="nav-item">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg>
+                            Entrar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="notificacao">3</span>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                              </svg>
+                            Carrinho
+                        </a>
+                    </li>
+                </ul>
+                <!-- end administrativo do cliente -->
             </article>
+            <!-- end row -->
         </section>
+        <!-- end container -->
     </header>
+    <!-- end header -->
+
+    <!-- menu do site -->
+    <nav class="container-fluid nav-produtos">
+        <!-- container -->
+        <section class="container">
+        <!-- menu -->
+            <ul class="nav">
+                <!-- lista de itens -->
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    Moda Feminina
+                    <!-- sub-menu -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            Lançamentos
+                        </li>
+
+                        <li class="nav-item">
+                            Plus Size
+                        </li>
+
+                        <li class="nav-item">
+                            Moda Praia
+                        </li>
+
+                        <li class="nav-item">
+                            Acessórios
+                        </li>
+
+                        <li class="nav-item">
+                            Promoção
+                        </li>
+                    </ul>
+                    <!-- end sub-menu -->
+                </li>
+                <!-- end lista de itens -->
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    Calçados
+                </li>
+            </ul>
+        <!-- end menu -->
+        </section>
+        <!-- container -->
+    </nav>
+    <!-- end menu do site -->
+
+    <!-- main -->
+    <main>
+        <!-- banners promocionais rotativos-->
+        <section id="banners-promocionais" class="container carousel slide" data-bs-ride="carousel">
+            <!-- imagens -->
+            <article class="carousel-inner">
+            <figure class="carousel-item active">
+                <img src="./assets/images/banner-1.jpg" class="d-block w-100" alt="banner promocional Lançamentos verao">
+            </figure>
+            <figure class="carousel-item">
+                <img src="./assets/images/banner-2.jpg" class="d-block w-100" alt="banner promocional Lançamentos verao">
+            </figure>
+            </article>
+
+            <!-- prev -->
+            <a class="carousel-control-prev" type="button" data-bs-target="#banners-promocionais" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </a>
+            <!-- next -->
+            <a class="carousel-control-next" type="button" data-bs-target="#banners-promocionais" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </a>
+        </section>
+        <!-- ens banners promocionais rotativos-->
+
+        <!-- banners promocionais com 6 colunas -->
+        <section class="container">
+            <!-- row -->
+            <section class="row">
+                <!-- banner -->
+                <article class="col-md-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                      </svg>
+                      <p>
+                        Parcele em até <br>
+                        <strong>12x sem juros</strong>
+                      </p>
+                </article>
+                <!-- end banner -->
+
+                <article class="col-md-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                      <p>
+                        Entrega para<br> 
+                        <strong>todo Brasil</strong>
+                      </p>
+                </article>
+            </section>
+            <!-- end row -->
+
+        </section>
+        <!-- banners promocionais com 6 colunas -->
+
+    </main>
+    <!-- end main -->
+
     <!-- Arquivos Boorstrap -->
     <script  src =" ./assets/js/bootstrap.bundle.min.js "></script>
     <script  src =" ./assets/js/popper.min.js "></script>
